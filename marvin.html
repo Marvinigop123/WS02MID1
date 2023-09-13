@@ -8,47 +8,64 @@
 <div class="wrapper">
 <header>
 <img src="https://cdn.oneesports.gg/cdn-data/2023/07/Anime_Doraemon_Wallpaper-1024x576.jpg">
-<h1> DORAEMON</h1>
+<h1 id="demo"></h1>
 </header>
 <div class="content">
-<h2>About Doraemon</h2>
-<p>Doraemon (ドラえもん) is a Japanese manga series written and illustrated by Fujiko F. Fujio. The manga was first serialized in December 1969.</p>
+    <div style="padding-top: 40px; padding-bottom: 40px;">
+        <h2>About Doraemon</h2>
+        <p>Doraemon (ドラえもん) is a Japanese manga series written and illustrated by Fujiko F. Fujio. The manga was first serialized in December 1969.</p>
+    </div>
 
-<h2>Doraemon Charact3cs</h2>
-<ul>
-<li>Eye color: greenish black</li>
-<li>Favorite food: dorayaki, a Japanese, red-bean pie</li>
-<li>Habit: reading comic books whenever Nobita is at school</li> 
-<li>Hates: mice
+    <h2>Doraemon Charact3cs</h2>
+    <ul>
+    <li>Eye color: greenish black</li>
+    <li>Favorite food: dorayaki, a Japanese, red-bean pie</li>
+    <li>Habit: reading comic books whenever Nobita is at school</li> 
+    <li>Hates: mice
 
-    Talents and power: Doraemon has a lot of magical gadgets that allow him to do what he wants. Besides that, he also has a special talent that he can eat a lot of dorayaki.
-    
-     </li>
-</ul>
-<img class="big-image" src="https://japancitytour.com/wp-content/uploads/2021/03/doraemon.jpg">
-<h2>Doraemon Friends</h2>
-<ul>
-<li><a
+        Talents and power: Doraemon has a lot of magical gadgets that allow him to do what he wants. Besides that, he also has a special talent that he can eat a lot of dorayaki.
+        
+        </li>
+    </ul>
+    <img class="big-image" style="padding-top: 60px; padding-bottom: 80px;" src="https://japancitytour.com/wp-content/uploads/2021/03/doraemon.jpg">
+    <h2>Doraemon Friends</h2>
+    <div class="image-container" style="display: flex;justify-content: space-between; align-items: center;">
 
-href="https://www.facebook.com/marvincobarrubias00/" target="_blank"
-3tle="Visit Vanellope's page">FB Pages </a> from Doraemon</li>
+        <div class="rounded-image-container">
+            <img src="https://janreyy.github.io/WS02-MID01/Reyna.jpg.jpg" alt="Zero-Two in Action" class="action-image rounded-image">
+            <h2><a href="https://arceusgithub.github.io/WS02-MID1/" target="_blank" title="Visit Russel's page">Reyna</a></h2>
+        </div>
+        <div class="rounded-image-container">
+            <img src="https://janreyy.github.io/WS02-MID01/Shanks.jpg" alt="Zero-Two in Action" class="action-image rounded-image">
 
-<li><a href="hTps://adventure3me.fandom.com/wiki/Finn"
-target="_blank" 3tle="Visit Nobita's page">Nobita</a> from Adventure Time</li>
-<li><a href="hTps://adventure3me.fandom.com/wiki/Jake"
-target="_blank" 3tle="Visit Suneyo's page">Suneyo</a> from Adventure Time</li>
-
-</ul>
+        <h2><a href="https://vincelei.github.io/WS02-MID1/" target="_blank" title="Visit Vince's page">Shanks</a></h2>
+        </div>
+        <div class="rounded-image-container">
+            <img src="https://janreyy.github.io/WS02-MID01/Marin.jpg" alt="Zero-Two in Action" class="action-image rounded-image">
+            <h2><a href="https://gezrael.github.io/WS-02MID1/" target="_blank" title="Visit Gezrael's page">Marin</a></h2>
+        </div>
+    </div>
 </div>
 <footer>
 <ul>
-<li>Made by <a href="hTp://119.93.173.77:81/oes/" target="_blank"
-
-3tle="View Ronron's FB page">Ronron</a></li>
+<li>Made by <a href="https://www.facebook.com/marvincobarrubias00/" target="_blank">Marvin</a></li>
 <li>&copy; 2023</li>
 </ul>
 </footer>
 </div>
-
+<script>
+    var i = 0;
+    var txt = 'DORAEMON.';
+    var speed = 50;
+    
+    function typeWriter() {
+      if (i < txt.length) {
+        document.getElementById("demo").innerHTML += txt.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+    typeWriter();
+    </script>
 </body>
 </html>
